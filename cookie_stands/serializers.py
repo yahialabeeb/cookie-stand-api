@@ -4,4 +4,4 @@ from .models import CookieStand
 class CookieSerialize(serializers.ModelSerializer):
     class Meta:
         model = CookieStand
-        field = "__all__"
+        fields = "__all__"
