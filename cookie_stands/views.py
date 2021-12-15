@@ -6,10 +6,10 @@ from .permissions import IsOwnerOrReader
 
 # Create your views here.
 class CookiesList(generics.ListCreateAPIView):
-    querySet = CookieStand.objects.all()
+    queryset = CookieStand.objects.all()
     serializers_class = CookieSerialize
 
 class CookiesDetails(generics.RetrieveUpdateDestroyAPIView):
-    querySet = CookieStand.objects.all()
+    queryset = CookieStand.objects.all()
     serializers_class = CookieSerialize
     permission_classes = (IsOwnerOrReader,)
