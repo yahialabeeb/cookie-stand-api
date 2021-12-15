@@ -8,8 +8,10 @@ from .permissions import IsOwnerOrReader
 class CookiesList(generics.ListCreateAPIView):
     queryset = CookieStand.objects.all()
     serializer_class = CookieSerialize
+    fields = '__all__' 
 
 class CookiesDetails(generics.RetrieveUpdateDestroyAPIView):
     queryset = CookieStand.objects.all()
     serializer_class = CookieSerialize
+    fields = '__all__' 
     permission_classes = (IsOwnerOrReader,)
