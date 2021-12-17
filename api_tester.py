@@ -38,7 +38,7 @@ class ApiTester:
         """
         access_token = self.fetch_tokens()[0]
 
-        url = f"{self.host}/api/v1/{RESOURCE_URI}/"
+        url = f"{self.host}/api/all/"
 
         headers = {
             "Authorization": f"Bearer {access_token}",
@@ -56,7 +56,7 @@ class ApiTester:
         """
         access_token = self.fetch_tokens()[0]
 
-        url = f"{self.host}/api/v1/{RESOURCE_URI}/{id}"
+        url = f"{self.host}/api/{id}"
 
         headers = {
             "Authorization": f"Bearer {access_token}",
@@ -77,7 +77,7 @@ class ApiTester:
 
         access_token = self.fetch_tokens()[0]
 
-        url = f"{self.host}/api/v1/{RESOURCE_URI}/"
+        url = f"{self.host}/api/all"
 
         headers = {
             "Authorization": f"Bearer {access_token}",
@@ -103,7 +103,7 @@ class ApiTester:
 
         access_token = self.fetch_tokens()[0]
 
-        url = f"{self.host}/api/v1/{RESOURCE_URI}/{id}/"
+        url = f"{self.host}/api/{id}/"
 
         headers = {
             "Authorization": f"Bearer {access_token}",
@@ -130,7 +130,7 @@ class ApiTester:
 
         access_token = self.fetch_tokens()[0]
 
-        url = f"{self.host}/api/v1/{RESOURCE_URI}/{id}/"
+        url = f"{self.host}/api/{id}/"
 
         headers = {
             "Authorization": f"Bearer {access_token}",
